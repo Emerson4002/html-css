@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Idroid;
+    src: url('IDroid.otf');
+}
+    /*format types: -opentype(otf) - truetype(ttf) - embedded-opentype - truetype-aat (apple advanced typegraphy) -svg*/
+
+body{
+    margin: 0px;
+    background-color: #8df79f;
+    
+}
+header{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    
+}
+
+h2{
+    font-family: 'idroid';
+    color: green;
+    
+}
+h1{font-family: 'idroid';}
+h1 , p{
+    
+    text-align: center;
+}
+nav{
+    padding: 5px;
+}
+nav > a{
+    color: white;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+}
+main{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+    
+}
+picture{
+    padding: 2px;
+    margin-left:30px ;
+    background-color: black;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(12, 99, 12);
+    color: white;
+    padding: 1px;
+}
+main article h2{
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia de Fontes</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+         /*Nesse proximo style vamos usar o metod de fontes externas baixadas 
+         */
+         @font-face {
+            font-family: 'honniley';
+            src: url(/fonts/Honilley.otf) format('opentype'), url(/fonts/Honilley.ttf)format('truetype');
+        }
+
+        body {
+             background-color: rgb(75, 54, 54);
+         }
+        body h1,h2
+        {
+            font: italic bolder 2em 'work sans', sans-serif;
+            color: rgb(247, 107, 107);
+            
+        }
+        /* P vai receber uma fonte do google fonts*/
+        p
+        {
+            font: italic bolder 2em  honniley 'Rampart One';
+            color: rgb(247, 247, 247);
+            font-size: 30px;
+        }
+        
+    </style>
+        <!--Nesse proximo style vamos usar o metod de fontes externas baixadas-->
+    <style>
+        @font-face {
+            font-family: 'honniley';
+            src: url('Honilley.otf') format('opentype'), url('Honilley.ttf')format('truetype');
+        }
+        
+        body
+        {
+            font-family:honniley ;           
+;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <h1>Familia de Fontes com CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa repudiandae cupiditate minus hic reiciendis quibusdam, necessitatibus quisquam numquam molestias? Mollitia rerum doloribus explicabo aliquid hic quisquam cum vel ipsam.
+        Velit iure doloribus quia numquam recusandae ullam sunt nihil vero, id fugit ea odit? Necessitatibus deserunt harum earum velit a laboriosam sed, obcaecati minima veritatis alias incidunt voluptatibus! Eveniet, placeat.
+        Minus expedita animi fugiat deleniti autem a sequi aliquid aperiam ipsa dolore perspiciatis explicabo quasi, doloribus iure, nisi officia sed? Repellendus, officia nostrum? Ad iure magnam obcaecati provident, similique non.
+        Voluptates eos assumenda, sequi at quidem sed repudiandae temporibus officia velit? Dolores, vel quaerat doloremque eligendi expedita autem sequi nam aspernatur voluptas magni, consectetur repudiandae dolor perferendis amet laborum eveniet.
+        Doloribus iusto beatae ut. Perspiciatis iste, accusantium voluptates in magni omnis rerum praesentium sed unde, neque magnam placeat. Culpa voluptate doloremque quasi aperiam incidunt eos voluptatem esse ab magni est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat eligendi dolorem sed consequuntur, consequatur deserunt nisi nihil? Est optio ipsam sequi similique dicta, fuga sed rem laboriosam facilis. Pariatur?</p>
+        <h2>SubTitulo da pagina</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nam alias velit voluptatem impedit quis explicabo deserunt hic culpa, odio quos similique, atque soluta possimus illo eveniet nobis? Quas, cupiditate!
+        Voluptatibus similique dolorem asperiores vel magni voluptates. Odit nihil quis eum voluptates neque odio natus ipsam facilis repellat facere quae laborum autem, possimus perspiciatis atque voluptatem dolore sapiente ut explicabo!</p>
+        <h1 class="font-extern-h1">Usando fontes externas baixadas</h1>
+        <p class="font-extern">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos sit officia porro, mollitia obcaecati. Iusto dolorem, quaerat facilis earum nobis autem dignissimos in recusandae accusantium dolores velit ratione exercitationem?
+            Sed numquam libero, facere harum mollitia officiis qui est inventore maiores ullam iste perspiciatis, distinctio delectus necessitatibus culpa. Explicabo labore, odio nemo aliquam provident amet excepturi distinctio eius harum et.
+        </p>
+        <p class="font-extern">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel exercitationem provident aliquid cupiditate quas, commodi veniam dolores consequatur tenetur reprehenderit delectus corrupti quisquam eos, quo perspiciatis. Aliquam debitis doloribus suscipit!</p>
+</body>
+</html>

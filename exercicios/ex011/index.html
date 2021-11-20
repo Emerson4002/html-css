@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1> Joga a âncora, marujo   &#x2693</h1>
+    <p>Os hyperlinks são um dos conceitos mais antigos da história da linguagem
+    HTML. Eles permitem que você ligue um ponto a outro na World Wide
+    Web. Toda vez que você está acessando um site e clica em um local para
+    ir para outra página, outro site ou até para baixar um arquivo, você está
+    interagindo com um hyperlink.
+    Até os mecanismos de busca se utilizam dos hyperlinks de um site. O
+    Google, por exemplo, para achar um determinado site, fica vasculhando
+    constantemente todos os outros sites da Internet procurando por links para descobrir
+    novos conteúdos. Por isso é tão importante conseguir links válidos de outros sites
+    para o nosso próprio site.</p>
+
+    <h2>Para criar um Hyperlink</h2>
+    <p>Para criar um Hyperlink, devemos criar ancoras através da tag &lt;a&gt;. O principal atributo dessa tag é o href, que cria uma referência hipertexto exemplo</p>
+    <hr>
+    <h2>vamos criar um link</h2>
+    <a href="https://www.youtube.com/watch?v=5qap5aO4i9A">Acesse o lofi</a>
+    <hr>
+    <p>Outro atributo bastante util da tag <abbr title="Utilizando a tag &lt;a&gt;">ancora</abbr> é o <strong>hreflang</strong>, que permite indicar qual é o idioma do site para o link está desviando o fluxo de navegação. Isso vai permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos</p>
+    <a href="https://www.w3schools.com/html/" hreflang="en"> Site da w3schools (em inglês)</a>
+
+    <h2>Mira no Alvo &#x1F3AF</h2>
+    <p>Por padrão, sempre que um visitante clique em um <em>hyperlink</em>, o site de destino abre na mesma janela do site que continha esse link. Ou seja, o conteudo anterior vai de ser exibido para mostrar o novo conteudo.</p><p>Esse é comportamento desejado quando o visitante vai continuar a visisatar o nosso site, apenas mudando de um documento para outro.<strong> Mas e quando um clique leva o visitante para outro site e provavelmente ele nunca mais voltará ao nosso?</strong>
+    </p>
+    <p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <em>target</em>, que suporta os seguintes valores
+    </p>
+    <ul>
+        <li><em>_blank</em>vai abrir o link em uma nova janela em branco</li>
+        <li><em>_self</em> vai abrir o link na janela ou frame atual(padrão)</li>
+        <li><em>_top</em> vai desfazer todos os frames e abrir o destino no navegador completo</li>
+        <li><em>_parent</em> similar ao uso do _top em uma referência á janela mãe</li>
+        <li><em>nome-do-frame</em> caso esteja usando frames, indicar o nome da janela a abrir</li>
+    </ul><p>Como o uso de frames é uma técnica quase em desuso, vamos nos basear apenas nas duas primeiras primeiras opções _blank e _self <br><hr>
+     <pre>
+         <code>
+             &lt;a href="pagina2.html" target="_sefl"&gt;
+             Continuar navegando no site
+             &lt;/a&gt;
+         </code>
+         <code>
+             &lt;a href="https://github.com/seuze23" target="_blank"&gt;
+             Abrir perfil GitHub em nova janela
+             &lt;/a&gt;
+         </code>
+     </pre>
+    </p>
+    <hr>
+    <a href="pagina2.html" target="_self" rel="next">Segunda pagina</a>
+    <hr>
+    <a href="/exercicios/ex010.5/index.html" rel="next">Lista de Jogos</a>
+    <hr>
+    <a href="/exercicios/ex010.5/terceirapag.html" rel="next">Ir para a TerceiraPagina</a>
+    <hr>
+    <a href="https://github.com/seuze23" target="_blank">Abrir perfil GitHub em nova janela</a>
+    <hr><p><strong>Links de Download</strong></p>
+    <ul>
+        <li><a href="07 - Hierarquia de títulos.pdf" download="07 - Hierarquia de títulos.pdf" type="application/pdf">Baixar pdf</a></li><hr>
+        <li><a href="07 - Hierarquia de títulos.rar" download="07 - Hierarquia de títulos.pdf" type="application/pdf">Baixar pdf.rar</a></li>
+        
+<hr>
+    </ul>
+<h2>Esse Link é seu ou dos outros?</h2>
+<p>
+    Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo <abbr title=rel=''><em><strong>rel</strong></em></abbr> Esse atributo aceita varios valores, entre eles:
+    <ul>
+        <li><em>next</em> indica que o link é para a proxima parte do documento atual</li>
+        <li><em>prev</em> indica que o link é para a parte anterior do documento atual</li>
+        <li><em>author</em> indica que o link é um link para o site do autor do artigo atual</li>
+        <li><em>external</em> indica que é um link para outro site que não faz parte do site atual</li>
+        <li><em>nofollow</em> indica que é um link para um site não endossado, como um link pago</li>
+    </ul><hr>
+    <pre>
+        <code>
+            &lt;a href="pagina2.html" target="_sefl" rel="next"&gt;
+            Continuar navegando no site
+            &lt;/a&gt;
+        </code>
+        <code>
+            &lt;a href="https://github.com/seuze23" target="_blank" rel="external"&gt;
+            Abrir perfil GitHub em nova janela
+            &lt;/a&gt;
+        </code>
+        </pre>
+        <p>
+            No codigo anterior, o primeiro link é o que chamamos de link local ou link interno, Nestes casos, devemos indicar dentro do nosso proprio site. Note que não é necessario nem indicar a URL completa nesse casos <br>
+            Já o segundo link vai nos levar para um outro site, o que chamamos de link externo. Nestes casos, devemos indicar a URL completa, incluindo o protocolo http:// ou https:// e o caminho que leve á uma pagina especifica, se for necessario.
+        </p>
+        <h2>E para fazer Downloads?</h2>
+        <p>Outra coisa que aparece bastante em sites são links para downloads de algum material em pdf, ou de um arquivo zip qualquer> A partir da ver~sao HTML5, as âncoras receberam atributos especiais para isso. Basta fazer o link diretamente para o arquivo que se deseja efetuar o donwload e adicionar o atributo <em>download</em> com valor configurado para o nome do arquivo a ser baixado e o atributo <em>type</em> para indicar ao navegador que tipo de arquivo está sendo baixado vamos ver um exemplo</p><hr>
+        <a href="07 - Hierarquia de títulos.pdf" download="meulivro.pdf" type="">
+        Baixe aqui o PDF do meu livro
+        </a><br>
+        <p>Aqui vão alguns <em>media types</em> bem usado no nosso dia-a-dia</p>
+        <ul>
+            <li>application/zip</li>
+            <li>text/html</li>
+            <li>text/css</li>
+            <li>text/javascript</li>
+            <li>video/mp4</li>
+            <li>video/H264</li>
+            <li>video/JPEG</li>
+            <li>audio/aac</li>
+            <li>audio/mpeg</li>
+            <li>font/ttf</li>
+            <li>image/jpeg</li>
+            <li>image/png</li>
+        </ul>
+</p>
+</body>
+</html>

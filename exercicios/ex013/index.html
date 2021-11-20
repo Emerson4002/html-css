@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TIpos de CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #av
+        {
+            background-color: rgb(99, 219, 235);
+            border: black solid 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tipos de CSS</h1>
+    <h2>CSS inline</h2>
+    <p>No css inline vc deve colocar o style dentro da tag que deseja estilizar exemplo</p>
+    <p>Esse tipo de css tem desvantagens como a manutenção pois fica desorganizado e tambem é desnecessariamente cansativo</p>
+    <hr>
+    <pre><code>&lt;body style="color:red;"&gt;&lt;body&gt;</code></pre>
+    <hr>
+    <div class="button">
+        <a href="index2.html">Exemplo de pagina</a>
+    </div>
+
+    <h2>CSS Interno</h2>
+    <p></p>
+    <pre><code>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;TIpos de CSS &lt;/title&gt;
+    &lt;style&gt;
+        body
+        {
+            color:green;
+        }
+        <!-- tamebm pode usar #id ou .class -->
+    &lt;/style&gt;
+&lt;/head&gt;
+    </code></pre>
+    <div class="button"><a href="index3.html">Exemplo dessa Pagina</a></div>
+    
+    <p id="av">
+        ATENÇÃO! A tag &lt;style&gt; deve estar dentro da área &lt;head&gt; do seu
+        documento HTML5. Se você colocá-la em qualquer outro local, como
+        dentro da tag &lt;body&gt;, o resultado até pode funcionar, mas seu código
+        estará fora dos padrões estabelecidos pela W3C. Siga sempre as regras!
+    </p>
+    <h2>CSS EXTERNAL Style</h2>
+    <p>Manter as folhas de estilo fora do código HTML, além de uma maior organização faz
+    com que tudo seja reaproveitado de maneira mais eficiente nas outras páginas do
+    nosso site. Para isso, utilizamos a tag &lt;link&gt; especialmente configurada para
+    trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área
+    &lt;head&gt; do seu documento HTML.</p>
+    <p> usando a tag dessa forma: <hr>
+        <pre><code>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        </code></pre>
+        <hr>
+        A linha com o &lt;link&gt; pode estar em qualquer linha, contanto que seja dentro da área
+        &lt;head&gt;. Particularmente, sempre procuro adicionar essa configuração após a tag
+        &lt;title&gt; do documento atual.
+    </p>
+        <div class="button"><a href="index4.html">Exemplo dessa Pagina</a></div>
+
+        <div class="button_principal">
+            <div class="button_content"><a href="/desafios">DESAFIOS</a><br></div>
+            <div class="button_content"><a href="/exercicios/">EXERCICIOS</a></div>
+        </div>
+       
+</body>
+</html>

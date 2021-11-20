@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2><abbr title="Tag &lt;ol&gt;">Listas Ordenadas</abbr></h2>
+    <p>A HTML chama de <abbr title="Tag &lt;ol&gt;"><strong>ordered lists</strong></abbr> todas aquelas listas onde a ordem dos itens é algo
+    muito importante. Um passo-a-passo para criar um bolo.
+    <br> Para criar uma <em>ordered list</em>, vamos usar a tag &lt;ol&gt; para delimitar a lista e &lt;li&gt;(list item) para identificar cada item da lista.</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <strong>IMPORTANTE!</strong> Segundo a <strong>W3C</strong>, a tag &lt;ol&gt; é de fechamento
+    obrigatório (ou seja, devemos sempre usar &lt;ol&gt;). Já a tag &lt;li&gt; tem
+    seu fechamento <strong>opcional</strong> a partir da HTML5.
+    <p>A Tag &lt;ol&gt; possui um paramentro type, onde configuramos o tipo de marcador da lista atual. exemplo:
+        <ol>
+            <li>‣ 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …</li>
+            <li>‣ A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …</li>
+            <li>‣ a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …</li>
+            <li>‣ I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …</li>
+            <li>‣ i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, …</li>
+        </ol><br>
+        Você também pode indicar o início da contagem usando o parâmero <em>start</em>.
+        por exemplo, a tag &lt;ol type="I" start ="S"&gt; vai gerar itens numerados como V,VI,VII,VIII,IX,...
+    </p>
+
+    <h2><abbr title="&lt;ul&gt;">Listas não Ordenadas</abbr></h2>
+    <p><em><strong>unordered lists</strong></em>, também chamadas de listas com marcadores, que são aquelas onde
+    a ordem dos itens não influenciará no significado da lista. Ela é apenas uma ótima
+    maneira para organizar os itens que não apresentam uma classificação
+    necessariamente. </p><p>Para criar uma unordered list, vamos usar a tag &lt;ul&gt; para delimitar a lista e a tag
+        &lt;li&gt; para criar cada um dos seus itens internos. </p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <p>O marcador padrão é a bolinha preta totalmente preenchida (cicle), mas existe a opção de configurar a propriedade type da &lt;ul&gt; com os seguintes valores:</p>
+        <ul>
+            <li type="disc">disc - padrão, Uma bola preta</li>
+            <li type="circle">circle - uma bola com uma borda preta sem preenchimento</li>
+            <li type="square">square - Um pequeno quadrado preto totalmente pintado</li>
+        </ul>
+        <h2>Misturando as Coisas</h2>
+        <p>Podemos tambem criar listas mistas, configurando listas dentro de outras listas. Veja o exemplo a seguir</p>
+        <ol>
+            <li>item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ol type="a">
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <li>Item 2.3</li>
+            </ol>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+        <p>Note que os itens da lista interna (a, b, c, …) está deslocado para a direita em relação
+        ao item 2, do qual essa sub-lista é filha.</p>
+        <p>DICA: Além de aninhar listas ordenadas, podemos juntar listas &lt;ul&gt;
+        com &lt;ol&gt; e vice-versa. As listas internas sempre terão deslocamento
+        interno para a direita.</p>
+        <h2>Lista de Definições</h2>
+        <p>É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem
+        demarcadores, mas bem útil em alguns casos.</p>
+        <p>Toda lista de definições está dentro de uma tag &lt;dl&gt; &lt;/dl&gt; (definition list) Cada
+        termo é um &lt;dt&gt; (definition term) e cada descrição é um &lt;dd&gt; (definition description).
+        Assim como os itens da lista, essas duas últimas tags possuem fechamento opcional,
+        segundo a referência oficial da HTML5.</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>linguagem de marcação utilizada para criar o conteudo de sites.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de estilo em sites.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criar interatividade em sites.</dd>
+        </dl>
+</body>
+</html>

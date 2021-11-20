@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semantica) </p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag semantica &lt;strong&gt;</p>
+
+    <h2>itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (Não semantica)</p>
+    <p>Nesta frase, temos um <em>termo em itálico</em> usando a tag &lt;em&gt;(semantica)</p>
+
+    <h2>Trechos de códigos</h2>
+    <p> . Para isso, existe a tag &lt;code&gt; da HTML onde você podedelimitar seu código. A principal vantagem no uso dessa tag é a o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador. Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas (monospace).  <code><hr>
+        num =  int(input('Digite um numero'))
+           if num % 2 == 0;
+              print(f'0 numero {num} é par')
+              else:
+              print(f'0 numero {num} é impar')
+              print('FIM DO PROGRAMA')
+    </code><hr> <br> Dessa forma o codigo apenas sofre uma mudança das letras.
+    Para resolver esse problema, vamos usar uma outra tag HTML chamada &lt;pre&gt;, que mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.
+     <hr>   
+     <pre>
+         <code>
+                 num =  int(input('Digite um numero'))
+                 if num % 2 == 0;
+                    print(f'0 numero {num} é par')
+                    else:
+                    print(f'0 numero {num} é impar')
+                    print('FIM DO PROGRAMA')
+         </code>
+         <!--AS TAGS, UNIDAS JAMAIS SERÃO VENCIDAS! No exemplo
+            acima você pode perceber que adicionamos uma tag dentro da outra. Quando isso acontece, é como se elas juntassem suas forças para gerar um resultado ainda mais poderoso. É possível então juntar <strong> e <em> e gerar um resultado como esse: em negrito e em itálico ao mesmo tempo!-->
+     </pre><hr>
+    </p>
+    <h2>Citações</h2>
+    <p>Para criar uma citação em HTML, podemos usar a tag &lt;q&gt; mas não terá nenhum deslocamento. Essa técnica é mais usada quando queremos uma citação no meio de um parágrafo.
+        Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo
+só para si. Nesse caso, colocaremos tudo dentro de &lt;blockquote&gt; e o texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmetro cite dentro da tag.
+<hr>
+        <blockquote cite="www.instagram.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat impedit, officiis, odio iusto dolorum debitis dolor ea nisi cupiditate voluptatibus? Alias debitis quisquam vel corrupti necessitatibus veniam molestiae laudantium.
+        </blockquote>
+<hr>
+</p>
+
+    <h2>Abreviações</h2>
+    <p>
+        Essa é uma novidade da HTML5 e que ajuda muito em áreas como a de Tecnologia,que usa muitas siglas e abreviações. Sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag
+&lt;abbr&gt;
+        <p>Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.</p>
+        Note no código acima que usamos o title para
+        indicar o significado da sigla. Ao lado, mostro
+        o funcionamento desse código no navegador.
+        Quando passamos o mouse sobre a sigla abreviada, um pequeno texto aparece com o seu significado.
+    </p>
+
+        <H2><bdo dir="rtl">Texto Invertido</bdo></H2>
+        <p>Não entendeu nada desse título? Pois volte ali em cima e leia da última letra até a
+        primeira. Achou inútil? Eu também. Pois é exatamente essa a função da tag <bdo>.
+        Para começo de conversa, BDO significa bi-directional override. Ao usar essa tag,
+        coloque também o parâmetro dir para indicar uma das duas direções possíveis: <br>
+        rtl = da direita para a esquerda (right-to-left) <br>
+        ltr = da esquerda para a direita (left-to-right)
+        </p>
+
+        <h2>Texto Marcado</h2>
+        <p><mark>Lorem ipsum dolor sit amet consectetur</mark>. Usando a tag &lt;mark&gt; você faz uma marcação no trecho escolhido. Usando css vc pode mudar o estilo do mark como <mark style="background-color: aquamarine;">por exemplo a cor padrao usando </mark>
+            &lt;mark style="background-color: aquamarine;"&gt;por exemplo a cor padrao usando &lt;/mark&gt;
+            usando tag &lt;style&gt; no head vc pode modificar todos os mark por exemplo.
+            <br>
+            &lt;style&gt;
+            mark{
+                background-color:red;
+            }
+            &lt;/style&gt;
+        </p>
+
+        <h2><del>Texto deletado</del></h2>
+        <p>Antigamente existia a tag &lt;strike&gt; que hoje tambem esta depreciada depois da ultima versão da HTML. No lugar dela entrou a tag &lt;del&gt;  que significa que <del>o texto está ali,pode até ser lido, mas deve ser desconsiderado pelo leitor</del>. Exatamente como eu acabei de fazer.</p>
+
+        <h2><ins>Texto inserido</ins></h2>
+        <p>O texto inserido é o exato oposto do texto   deletado que vimos anteriormente. Nesse         caso, se colocarmos um texto qualquer dentro de &lt;ins&gt; e &lt;/ins&gt;, estamos dizendo que <ins>o texto está ali, deve ser lido e você deve prestar atenção nele.</ins> É o que fazíamos anteriormente ao utilizar a tag &lt;u&gt; para sublinhar um texto.</p>
+
+        <h2>Textos sobrescrito e subscrito</h2>
+        <p>Quantas vezes você tentou escrever um x<sup>2</sup> ou um H<sub>2</sub>O em um documento e ficou na dúvida de como fazer pra esses números ficarem pequeninos ali em cima ou embaixo. Pois a HTML tem as tags &lt;sub&gt; e &lt;sup&gt; justamente para essafinalidade. Ao analisar os exemplos de código que apontei no início desse documento, você vai perceber melhor a diferença entre eles. </p>
+
+        <h2>Texto grande e Texto pequeno</h2>
+        <p><big>&lt;big&gt;</big> morreu, mas o <small>&lt;small&gt;</small> ainda sobrevive.             
+            Tem certas coisas que simplesmente não são fáceis de entender. A tag <big> (que deixava o texto maior) está depreciada pela HTML5,mas a tag <small> (que deixa o texto menor> segue firme e forte na vida da linguagem. E não adianta ficar me olhando com essa cara de reprovação. Eu não tenho culpa nenhuma por conta dessa decisão, sou apenas um mero professor que se foca em mostrar os fatos, não em fazê-los ter um sentido claro. Tem certas coisas que a gente
+        não questiona, só aceita que dói menos.</p>
+</body>
+</html>
