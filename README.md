@@ -3,6 +3,7 @@
  body{
   background-color:black;
  }
+ .container{backgorund-color: white;}
  main{
   background-color: white;
  }
