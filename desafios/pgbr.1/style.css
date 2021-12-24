@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+body{
+    background-color: rgba(7, 189, 83, 0.911);
+    font-size: 20px;
+    font-family:Nan, Helvetica, sans-serif;
+    
+}
+
+#container{
+    position: absolute;
+    background-image: url(backgorund.png);
+    
+    background-color: blueviolet;
+    background-size: 100% 100%;
+
+    box-shadow: 3px 4px 9px 0px rgba(0, 0, 0, 0.678);
+    border-radius: 20px;
+    
+    
+    height: 200px;
+    width: 400px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#conteudo{
+    /*background-color: yellow;
+    background-image: url(target001.png);*/
+    background-size: 100% 100%;
+
+    position: absolute;   
+
+}
+h1{
+    text-align: center;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
