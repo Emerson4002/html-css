@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@100;200&family=Nanum+Gothic+Coding&display=swap');
+
+
+body{
+    background-color: rgba(5, 5, 5, 0.664);
+    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+#container{
+    position: absolute;
+    background-image: url(backgorund.png);
+    background-size: 100% 100%;
+    padding: 10px;
+
+    width: 400px;
+    height: 200px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    box-shadow: #0000007d 1px 4px 10px;
+
+}
+
+#conteudo{
+    position: absolute;
+}
+h1{
+    text-align: center;
+
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+
+}
+
