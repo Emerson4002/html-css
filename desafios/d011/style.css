@@ -1,0 +1,21 @@
+body{
+    background-image: url(imagens/espaco.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    background-repeat: no-repeat;
+}
+
+    
+    
+
+#conteudo{
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+
+}
